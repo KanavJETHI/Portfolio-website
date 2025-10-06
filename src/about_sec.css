@@ -1,0 +1,61 @@
+/* Grid Container */
+.tech-icons-grid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));*/
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1200px;
+  
+  margin: 0 auto;
+}
+
+/* Individual Tech Icons */
+.tech-icons {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: #111827;
+  font-size: 4rem !important;
+  padding: 1.5rem !important;
+  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border-radius: 8px !important;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;
+  color: white;
+  aspect-ratio: 1;
+}
+
+/* Hover Effect */
+.tech-icons:hover {
+  transform: scale(1.05) !important;
+  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.2) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .tech-icons-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
+  .tech-icons {
+    font-size: 3rem !important;
+    padding: 1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-icons-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .tech-icons {
+    font-size: 2.5rem !important;
+    padding: 0.75rem !important;
+  }
+}
