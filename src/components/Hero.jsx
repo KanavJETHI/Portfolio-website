@@ -41,7 +41,7 @@ const Hero = () => {
             transition={{duration:1.2, delay:0.2}}
             className='lg:w-[600px] mb-8  text-sm text-gray-300'>I'm a Software Engineer and Full Stack Developer passionate about turning complex problems into elegant, user-friendly applications and bringing innovative ideas to life online.</motion.p>
 
-            <a href='https://drive.google.com/file/d/1lvHA51H127XnBlYPs44DC1rUUtw9kDCn/view?usp=sharing' target='_blank' className='block'>
+            <a href='https://drive.google.com/file/d/1WAJ8uqhnL2NYhb97ZQdjnj03iHzYsBgM/view?usp=sharing' target='_blank' className='block'>
               <motion.button 
             initial={{opacity:0, x:-100}}
             whileInView={{opacity:1, x:0}}
